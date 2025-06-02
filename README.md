@@ -38,6 +38,19 @@ embeddings = get_embeddings(model, dataloader)
 pip install omegaconf 
 pip install albumentations
 pip install hydra-core
+
+#----- Get Embeddings -----
+def get_embeddings(model, dataloader):
+    all_embeddings = []
+    with torch.no_grad():
+        for batch in tqdm(dataloader):
+            img_emb = model.encode_image(batch["images"])
+            all_embeddings.append(img_emb)
+    return np.vstack(all_embeddings)
+
+#---- Encode RSNA Dataset ----
+dataloader = evaluator.test_dataloader_dict["rsna_pneumonia_test"]
+embeddings = get_embeddings(evaluator, dataloader)
 ```
 
 ## Cite this work
