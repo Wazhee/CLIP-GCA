@@ -32,6 +32,8 @@ def get_embeddings(model, dataloader):
 
 embeddings = get_embeddings(model, dataloader)
 ```
+pip install omegaconf 
+pip install albumentations
 
 ## Cite this work
 Kulkarni et al, [*Hidden in Plain Sight*](https://arxiv.org/abs/2402.05713), MIDL 2024.
