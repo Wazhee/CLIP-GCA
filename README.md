@@ -32,8 +32,13 @@ def get_embeddings(model, dataloader):
 
 embeddings = get_embeddings(model, dataloader)
 ```
+
+## How to Implement CXR-CLIP
+```python
 pip install omegaconf 
 pip install albumentations
+pip install hydra-core
+```
 
 ## Cite this work
 Kulkarni et al, [*Hidden in Plain Sight*](https://arxiv.org/abs/2402.05713), MIDL 2024.
