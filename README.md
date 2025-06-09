@@ -53,6 +53,13 @@ dataloader = evaluator.test_dataloader_dict["rsna_pneumonia_test"]
 embeddings = get_embeddings(evaluator, dataloader)
 ```
 
+## Calculate Subgroup Vulnerability
+```python
+pip install statsmodels
+pip install pydicom
+pip install statannotations
+```
+
 ## Cite this work
 Kulkarni et al, [*Hidden in Plain Sight*](https://arxiv.org/abs/2402.05713), MIDL 2024.
 ```
