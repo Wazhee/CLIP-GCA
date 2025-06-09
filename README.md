@@ -55,6 +55,7 @@ embeddings = get_embeddings(evaluator, dataloader)
 
 ## Calculate Subgroup Vulnerability
 ```python
+pip install 'tensorflow[and-cuda]'
 pip install opencv-python
 pip install statsmodels
 pip install pydicom
